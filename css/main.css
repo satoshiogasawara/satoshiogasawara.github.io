@@ -21,9 +21,6 @@ body {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
 
-ol, ul {
-  padding-left: 20px; }
-
 blockquote, q {
   quotes: none; }
 
@@ -1622,6 +1619,25 @@ a {
     color: #008080; }
   .highlight .il {
     color: #009999; }
+
+.default h1 {
+  text-align: center; }
+
+.default ol, .default ul, .default li {
+  list-style: none; }
+
+.default ul {
+  border-top: 1px solid #ccc; }
+
+.default li {
+  border-bottom: solid 1px #ccc;
+  padding: 10px 0; }
+
+.default .post-title {
+  font-weight: bold; }
+
+.post ol, .post ul {
+  padding-left: 20px; }
 
 .hoge {
   position: relative; }
