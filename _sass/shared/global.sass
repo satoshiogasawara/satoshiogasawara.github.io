@@ -1,0 +1,290 @@
+@charset "UTF-8"
+
+/**
+ *
+ *  サイト共通
+ *
+/*--------------------------------------------------------------------------
+ *   reset
+ *---------------------------------------------------------------------------
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  outline: 0
+  font-size: 100%
+  vertical-align: baseline
+  background: transparent
+
+body
+  line-height: 0
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  padding-left: 20px
+  
+blockquote, q
+  quotes: none
+
+blockquote
+  &:before, &:after
+    content: ''
+    content: none
+
+q
+  &:before, &:after
+    content: ''
+    content: none
+
+a
+  margin: 0
+  padding: 0
+  font-size: 100%
+  vertical-align: baseline
+  background: transparent
+  text-decoration: none
+
+ins
+  background-color: #ff9
+  color: #000
+  text-decoration: none
+
+mark
+  background-color: #ff9
+  color: #000
+  font-style: italic
+  font-weight: bold
+
+img
+  border: 0
+  vertical-align: top
+
+em
+  font-style: italic
+
+del
+  text-decoration: line-through
+
+abbr[title], dfn[title]
+  border-bottom: 1px dotted
+  cursor: help
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+hr
+  display: block
+  height: 1px
+  border: 0
+  border-top: 1px solid #ccc
+  margin: 0
+  padding: 0
+
+input, select, textarea
+  font-family: inherit
+  font-style: inherit
+  font-weight: inherit
+  font-size: 100%
+  margin: 0
+  padding: 0
+  vertical-align: middle
+
+input:focus, textarea:focus, select:focus
+  outline: none
+
+/*--------------------------------------------------------------------------
+ *   html
+ *---------------------------------------------------------------------------
+
+html
+  overflow-y: scroll
+
+/* clearfix
+ *-----------------------------------------------------------------
+
+.cf
+  &:before
+    display: table
+    content: ''
+  &:after
+    display: table
+    content: ''
+    clear: both
+  zoom: 1
+
+/*--------------------------------------------------------------------------
+ *   body
+ *---------------------------------------------------------------------------
+
+body
+  min-width: 1024px
+  font-family: '游ゴシック',YuGothic,"meiryo","メイリオ",'ヒラギノ角ゴ ProN W3',"Hiragino Kaku Gothic ProN","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic",Sans-Serif
+  font-size: 15px
+  line-height: 1.8
+  -webkit-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%
+  text-size-adjust: 100%
+  color: #514c47
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+  body
+    font-size: 75%
+
+/*--------------------------------------------------------------------------
+ *   base link
+ *---------------------------------------------------------------------------
+
+a
+  color: #514c47
+  outline: none
+  opacity: 1
+  -webkit-tap-highlight-color: transparent
+  &:link, &:visited
+    text-decoration: none
+  &:hover
+    text-decoration: none
+    outline: none
+    opacity: 0.7
+  &:active
+    outline: none
+
+/*--------------------------------------------------------------------------
+ *   Header
+ *---------------------------------------------------------------------------
+
+.breadcrumb
+  ul li
+    float: left
+  a
+    text-decoration: underline
+
+/*--------------------------------------------------------------------------
+ *   Content
+ *---------------------------------------------------------------------------
+/*--------------------------------------------------------------------------
+ *   Main
+ *---------------------------------------------------------------------------
+
+#Main
+  width: 980px
+  margin: 0 auto
+
+/*--------------------------------------------------------------------------
+ *   Side
+ *---------------------------------------------------------------------------
+/*--------------------------------------------------------------------------
+ *   Footer
+ *---------------------------------------------------------------------------
+/* コピーライト
+ *-----------------------------------------------------------------
+
+#Footer .copy
+  text-align: center
+  font-size: 10px
+
+/*--------------------------------------------------------------------------
+ *   Other
+ *---------------------------------------------------------------------------
+/* box-model
+ *-----------------------------------------------------------------
+/*
+ **{
+ *    -webkit-box-sizing: border-box
+ *    -moz-box-sizing: border-box
+ *    box-sizing: border-box
+ *}
+/*--------------------------------------------------------------------------
+ *	Media Query
+ *---------------------------------------------------------------------------
+//
+  .sp_header, .sp
+    display: none
+
+  .pc
+    display: block
+
+  @media screen and (max-width: 640px)
+    .sp
+      display: block
+    .pc, .global_navi
+      display: none
+    .sp_header
+      position: absolute
+      width: 100%
+      top: 0
+      z-index: 2
+      background-color: #ccc
+      display: block
+      h1
+        font-size: 9px
+        font-weight: normal
+        text-align: center
+        margin-bottom: 10px
+    a
+      -webkit-transition: opacity 0.3s ease
+      transition: opacity 0.3s ease
+      display: block
+      width: 60%
+      color: #486176
+      text-align: center
+      margin: 10px 0px 0 10px
+      &:hover
+        opacity: 0.7
+        text-decoration: none
+    img
+      width: 100%
+      height: auto
+    .sp_navbtn
+      position: absolute
+      top: 30px
+      right: 10px
+      z-index: 0
+    #nav_box
+      display: none
+      background: #ffffff
+    #g-nav
+      border-top: solid 1px #A3B0BA
+      font-size: 13px
+      z-index: 2
+      position: relative
+      ul li
+        padding: 12px
+        border-bottom: solid 1px #A3B0BA
+        background-size: 6px 12px
+        background-color: white
+        &:last-child
+          border-bottom: none
+        a
+          display: block
+          color: black
+    #h-btn
+      font-size: 13px
+      li
+        padding: 12px
+        border-bottom: solid 1px #A3B0BA
+        background-size: 6px 12px
+        a
+          display: block
+    #header-inner
+      *zoom: 1
+      margin: 0 auto
+      padding: 5px 0 0 0
+      &:after
+        content: ""
+        display: table
+        clear: both
+    body
+      min-width: 100%
+    #Main
+      width: 100%
+    #Content
+      width: 100%
+      padding-top: 90px
+    #Footer
+      width: 100%
+      .footer_inner
+        width: 100% !important

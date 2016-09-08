@@ -1,0 +1,7 @@
+auto: true
+markdown: kramdown
+exclude: ["node_modules", "gulpfile.js", "package.json" , "README.md"]
+timezone: JPN
+sass:
+  sass_dir: ./_sass/
+  style: compressed

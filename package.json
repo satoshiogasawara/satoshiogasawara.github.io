@@ -1,0 +1,27 @@
+{
+  "name": "satoshiogasawara.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satoshiogasawara/satoshiogasawara.github.io.git"
+  },
+  "author": "Satoshi Ogasawara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/satoshiogasawara/satoshiogasawara.github.io.git/issues"
+  },
+  "homepage": "https://github.com/satoshiogasawara/satoshiogasawara.github.io.git#readme",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-jekyll": "0.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2"
+  }
+}
