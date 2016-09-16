@@ -5,3 +5,6 @@ timezone: JPN
 sass:
   sass_dir: ./_sass/
   style: compressed
+name: MyJekyllSite
+encoding: utf-8
+author: asdfghj

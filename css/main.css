@@ -1666,3 +1666,11 @@ body {
   width: 980px;
   margin: 0 auto;
   background-image: url("/img/cloth-b2.png"); }
+
+.footer p a {
+  font-weight: bold;
+  color: #800000; }
+
+.footer .author {
+  font-weight: bold;
+  color: #47585c; }
