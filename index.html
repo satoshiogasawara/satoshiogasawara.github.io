@@ -9,9 +9,11 @@ author: ogasawara
   <ul class="posts">
     {% for post in site.posts %}
     <a href="{{ post.url }}">
-      <p class="post-image">
-        <img src="{{ post.image }}" alt="" />
-      </p>
+      <li>
+        <p class="post-image">
+          <img src="{{ post.image }}" alt="" />
+        </p>
+      </li>
       <li><span>{{ post.date | date: "%Y年%m月%d日" }}</span> &raquo;
         <p class="post-title">
           {{ post.title }}
