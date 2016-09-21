@@ -6,15 +6,13 @@ author: ogasawara
 
 <div id="home">
   <h1>備忘録</h1>
-  <ul class="posts">
+  <ul class="posts cf">
     {% for post in site.posts %}
     <a href="{{ post.url }}">
-      <li>
+      <li><span>{{ post.date | date: "%Y年%m月%d日" }}</span> &raquo;
         <p class="post-image">
           <img src="{{ post.image }}" alt="" />
         </p>
-      </li>
-      <li><span>{{ post.date | date: "%Y年%m月%d日" }}</span> &raquo;
         <p class="post-title">
           {{ post.title }}
         </p>
