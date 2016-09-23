@@ -4,13 +4,14 @@ title: SatoshiOgasawara
 author: ogasawara
 ---
 
+
 <div id="home">
   <h1>備忘録</h1>
   <p>
     現在の時刻 - {{ site.time | date_to_rfc822 }}
   </p>
   <ul class="posts cf">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
     <a href="{{ post.url }}">
       <li class="cf">
         <p class="date"><span>{{ post.date | date: "%Y年%m月%d日" }}</span> &raquo;</p>
@@ -24,4 +25,19 @@ author: ogasawara
     </a>
     {% endfor %}
   </ul>
+</div>
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">Previous</a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
 </div>

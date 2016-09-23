@@ -8,3 +8,5 @@ sass:
 name: MyJekyllSite
 encoding: utf-8
 author: Ogasawara
+gems: [jekyll-paginate]
+paginate: 5
