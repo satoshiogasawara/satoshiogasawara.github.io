@@ -1675,7 +1675,8 @@ body {
 
 .footer p a {
   font-weight: bold;
-  color: #800000; }
+  color: #800000;
+  text-decoration: underline; }
 
 .footer .author {
   font-weight: bold;
@@ -1706,3 +1707,15 @@ body {
 
 .author {
   margin-bottom: 40px; }
+
+.pagination {
+  font-size: 20px; }
+  .pagination a {
+    text-decoration: underline; }
+
+.previous, .next {
+  font-weight: bold;
+  color: #203744; }
+
+.page_number {
+  color: #752100; }
