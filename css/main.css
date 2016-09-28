@@ -1660,10 +1660,9 @@ code {
 
 .header {
   background: #008080; }
-  .header h1 {
-    text-align: center; }
-    .header h1 a {
-      color: #fff; }
+  .header a h1 {
+    text-align: center;
+    color: #fff; }
 
 body {
   width: 980px;
@@ -1718,4 +1717,5 @@ body {
   color: #203744; }
 
 .page_number {
-  color: #752100; }
+  color: #752100;
+  font-weight: bold; }

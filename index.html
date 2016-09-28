@@ -8,7 +8,7 @@ author: ogasawara
 <div id="home">
   <h1>備忘録</h1>
   <p>
-    現在の時刻 - {{ site.time | date_to_rfc822 }}
+    現在の時刻 - {{ site.time }}
   </p>
   <ul class="posts cf">
     {% for post in paginator.posts %}
