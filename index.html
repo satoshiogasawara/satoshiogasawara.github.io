@@ -7,9 +7,6 @@ author: ogasawara
 
 <div id="home">
   <h1>備忘録</h1>
-  <p>
-    現在の時刻 - {{ site.time }}
-  </p>
   <ul class="posts cf">
     {% for post in paginator.posts %}
     <a href="{{ post.url }}">
@@ -34,7 +31,7 @@ author: ogasawara
   {% else %}
     <span class="previous">前のページ</span>
   {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  <span class="page_number ">Page: {{ paginator.page }} / {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">次のページ</a>
   {% else %}
