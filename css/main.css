@@ -1719,3 +1719,6 @@ body {
 .page_number {
   color: #752100;
   font-weight: bold; }
+
+.container p:nth-child(2) {
+  word-wrap: break-word; }
